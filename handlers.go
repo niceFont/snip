@@ -55,7 +55,7 @@ func SnipHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
 		fmt.Println(err)
 	}
 
-	key := HashUrl(dataS.Val)
+	key := HashURL(dataS.Val)
 
 	List[key] = dataS.Val
 	shortenedURL.WriteString(key)

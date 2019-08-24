@@ -5,8 +5,8 @@ import (
 	"fmt"
 )
 
-//HashUrl hashes the url string
-func HashUrl(url string) string {
+//HashURL hashes the url string
+func HashURL(url string) string {
 
 	hash := sha1.New()
 	hash.Write([]byte(url))
